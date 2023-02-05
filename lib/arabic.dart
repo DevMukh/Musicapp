@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -12,17 +11,17 @@ class ArabicMusic extends StatelessWidget {
         child: Container(
           width: 200,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(
-                  20), //this radius for full card
+              borderRadius:
+                  BorderRadius.circular(20), //this radius for full card
               color: Colors.black45 //color for a card
-          ),
+              ),
           //cliprrect class in a flutter that clips its child using a rectangle extra r is for rounded
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(
-                    10), //this radius is for pic rounding
+                borderRadius:
+                    BorderRadius.circular(10), //this radius is for pic rounding
                 child: Image.asset('img/cokestudio1.jpg'),
               ),
               // SizedBox(
@@ -58,10 +57,10 @@ class ArabicMusic extends StatelessWidget {
                         fontWeight: FontWeight.bold),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(right: 10),
+                    padding: const EdgeInsets.only(right: 10),
                     child: Container(
                         color: Colors.orange,
-                        child: Icon(
+                        child: const Icon(
                           Icons.add,
                           color: Colors.white,
                         )),
@@ -70,17 +69,14 @@ class ArabicMusic extends StatelessWidget {
               ),
               Expanded(
                 child: ElevatedButton(
-                    onPressed: () {
-                    },
-
+                    onPressed: () {},
                     style: TextButton.styleFrom(
                         backgroundColor: Colors.transparent),
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 10),
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        children: const [
                           Icon(
                             Icons.chevron_left,
                             color: Colors.white,
